@@ -21,6 +21,7 @@ public class simple_calculator extends JApplet implements ActionListener
     JButton nine;
     JButton equalto;
     JButton c;
+    JButton dot;
     JLabel rslt;
     JLabel empty1,empty2,empty3;
     public void init()
@@ -51,6 +52,7 @@ public class simple_calculator extends JApplet implements ActionListener
         nine=new JButton("9");
         equalto=new JButton("=");
         c=new JButton("C");
+        dot=new JButton(".");
         rslt=new JLabel("0");
         //rslt.setSize(0,0);
         add(rslt);
@@ -58,24 +60,27 @@ public class simple_calculator extends JApplet implements ActionListener
         add(empty1);
         empty2=new JLabel();
         add(empty2);
-        empty2=new JLabel();
-        add(empty2);
+        //empty2=new JLabel();
+        //add(empty2);
+        add(c);
         add(nine);
         add(eight);
         add(seven);
-        add(plus);
+        add(divide);
         add(six);
         add(five);
         add(four);
-        add(minus);
+        add(multiply);
         add(three);
         add(two);
         add(one);
-        add(multiply);
-        add(c);
+        add(minus);
+        
         add(zero);
+        add(dot);
         add(equalto);
-        add(divide);
+        add(plus);
+        
         nine.addActionListener(this);
         eight.addActionListener(this);
         seven.addActionListener(this);
@@ -92,7 +97,7 @@ public class simple_calculator extends JApplet implements ActionListener
         divide.addActionListener(this);
         equalto.addActionListener(this);
         c.addActionListener(this);
-        
+        dot.addActionListener(this);
     }
         public void actionPerformed(ActionEvent ae)
         {
