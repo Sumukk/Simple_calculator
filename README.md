@@ -1,2 +1,2 @@
 # Simple-Calculator
-It is a simple gui of a simple calculator created using java applets concepts.
+It is a simple working calculator created using java swing and applets concepts.
